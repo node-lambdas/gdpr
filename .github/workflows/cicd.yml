@@ -2,8 +2,6 @@ name: CICD
 on:
   push:
 
-# jobs:
-#   release:
-#     uses: node-lambdas/core/.github/workflows/fn.yml@main
-#     with:
-#       name:
+jobs:
+  release:
+    uses: node-lambdas/core/.github/workflows/fn.yml@main
