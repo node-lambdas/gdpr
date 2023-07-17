@@ -18,6 +18,8 @@ export default {
   version: 2,
   actions: {
     getConsent: {
+      input:'json',
+      output: 'text',
       default: true,
       handler(input, output) {
         const { bgColor = "#f3f4f5", color = "black" } = input.options || {};
