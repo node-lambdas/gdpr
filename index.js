@@ -18,7 +18,6 @@ export default {
   version: 2,
   actions: {
     getConsent: {
-      input:'json',
       output: 'text',
       default: true,
       handler(input, output) {
