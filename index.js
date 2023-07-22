@@ -1,8 +1,8 @@
 
 function getConsent(color, bgColor, url) {
   const uid = 'u4yrtkjyt6i5uy';
-  return `<div id="${uid}" role="dialog" aria-live="polite" aria-label="cookie consent"
-style="display:none;position:absolute;z-index:99999999;bottom:0;margin:1rem;padding:1rem;border-radius:0.25rem;background-color:${bgColor};color:${color};border: 1px solid ${color}">
+  return `<style>@media(min-width:640px){#u4yrtkjyt6i5uy{max-width:50vw}}</style><div id="${uid}" role="dialog" aria-live="polite" aria-label="cookie consent"
+style="display:none;position:absolute;z-index:99999999;bottom:0;right:0;margin:1rem;padding:1rem;border-radius:0.25rem;background-color:${bgColor};color:${color};border: 1px solid ${color}">
 <p>We use cookies to provide our services and for analytics and marketing.
 To find out more about our use of cookies, please see our ${url ? '<a href="' + url + '">Privacy Policy</a>' : 'Privacy Policy'}.
 By continuing to browse our website, you agree to our use of cookies.
