@@ -10,7 +10,7 @@ By continuing to browse our website, you agree to our use of cookies.
 <button style="padding:0.5rem 1rem;border-radius:0.25rem;font-weight:bold;border:none;color:${bgColor};background:${color}"
 onclick="localStorage.__gdpr_dismiss=1;document.getElementById('${uid}').remove()">Got it!</button></div>
 </div>
-<img src="/" onerror="localStorage.__gdpr_dismiss || (document.getElementById('u4yrtkjyt6i5uy').style.display='block')" />`;
+<img src="/${uid}" onerror="localStorage.__gdpr_dismiss || (document.getElementById('u4yrtkjyt6i5uy').style.display='block');this.remove()" />`;
 }
 export default {
   version: 2,
