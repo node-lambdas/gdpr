@@ -16,7 +16,7 @@ export default {
   version: 2,
   actions: {
     getConsent: {
-      output: 'text',
+      output: 'dom',
       default: true,
       handler(input, output) {
         const { bgColor = "#f3f4f5", color = "#333", url = "" } = input.options || {};
