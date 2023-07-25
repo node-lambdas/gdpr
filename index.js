@@ -1,4 +1,3 @@
-
 function getConsent(color, bgColor, url) {
   const uid = 'u4yrtkjyt6i5uy';
   return `<div id="${uid}" role="dialog" aria-live="polite" aria-label="cookie consent"

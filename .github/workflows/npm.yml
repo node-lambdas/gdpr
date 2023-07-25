@@ -1,0 +1,14 @@
+name: NPM
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    uses: homebots/workflows/.github/workflows/node-build-release.yml@master
+    with:
+      registry: https://npm.pkg.github.com
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
